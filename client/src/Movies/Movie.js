@@ -47,6 +47,7 @@ export default class Movie extends Component {
         <MovieCard movie={this.state.movie} />
         <div onClick={this.saveMovie} style={{display: "flex", flexDirection:"column",}}>
             Save
+          </div>
           <Link 
           to={`/update-movie/${this.props.match.params.id}`}>
             Update
@@ -54,7 +55,7 @@ export default class Movie extends Component {
           <button onClick={this.handleDelete}>
             Delete
           </button>
-        </div>
+        
       </div>
     )}
 }}
